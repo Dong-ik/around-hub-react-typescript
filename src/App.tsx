@@ -1,7 +1,7 @@
 import { PropsAndState } from "./example/ProosAndState";
 import { StateComponent1 } from "./example/StateComponent1";
 import { StateComponent2 } from "./example/StateComponent2";
-import Hello from "./Hello";
+import Hello from "./example/Hello";
 
 function App() {
   // return <Hello></Hello>;
