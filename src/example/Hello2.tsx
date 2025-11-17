@@ -1,20 +1,20 @@
 import styled from "@emotion/styled";
 
 interface Props {
-    name: string;
-    color: string;
+  name: string;
+  color: string;
 }
 
 interface ContainerProps {
-    color: string;
+  color: string;
 }
 
 const Container = styled.div<ContainerProps>`
-    color: ${(props) => props.color};
+  color: ${(props) => props.color};
 `;
 
-export const Hello = ({name, color}: Props) => {
-    return <Container color={color}>Hello {name}</Container>;
+export const Hello = ({ name, color }: Props) => {
+  return <Container color={color}>Hello {name}</Container>;
 };
 
 // function Hello({name, color}: Props) {
