@@ -36,8 +36,7 @@ export const TodoProvider = (props: Props) => {
   };
 
   const deleteTodo = (no: number) => {
-    TodoList.filter((item: TodoListItemType) => item.no !== no);
-    setTodoList(TodoList);
+    setTodoList(TodoList.filter((item: TodoListItemType) => item.no !== no));
   };
 
   const toggleTodo = (no: number) => {

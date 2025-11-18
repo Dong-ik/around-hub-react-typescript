@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+import { useContext } from "react";
+import TodoContext from "..";
 
 const Li = styled.li``;
 
@@ -27,10 +29,12 @@ interface TodoItemProps {
 }
 
 export const TodoItem = ({ todo }: TodoItemProps) => {
+  const todoContext = useContext(TodoContext);
+  const deleteTodo = todoContext?.actions.deleteTodo!;
   return (
     <Li>
       <TextSpan done={todo.done}>{todo.todo}</TextSpan>
-      <RemoveSpan>[삭제]</RemoveSpan>
+      <RemoveSpan onClick={() => deleteTodo(todo.no)}>[삭제]</RemoveSpan>
     </Li>
   );
 };
