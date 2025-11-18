@@ -5,6 +5,9 @@ import Hello from "./example/Hello";
 import { NonContext } from "./example/Context/NonContext";
 import { ContextExample } from "./example/Context/Context";
 import { Context2 } from "./example/Context/Context2";
+import { Layout } from "./layouts/Layout";
+import { Example1 } from "./pages/Example1";
+import { Example2 } from "./pages/Example2";
 
 function App() {
   // return <Hello></Hello>;
@@ -13,7 +16,17 @@ function App() {
   // return <StateComponent2></StateComponent2>;
   // return <NonContext></NonContext>;
   // return <ContextExample />;
-  return <Context2 />;
+  // return <Context2 />;
+  // return (
+  //   <Layout>
+  //     <Example1 />
+  //   </Layout>
+  // );
+  return (
+    <Layout>
+      <Example2 />
+    </Layout>
+  );
 }
 
 export default App;
