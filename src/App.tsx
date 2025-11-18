@@ -17,13 +17,9 @@ function App() {
   // return <NonContext></NonContext>;
   // return <ContextExample />;
   // return <Context2 />;
-  // return (
-  //   <Layout>
-  //     <Example1 />
-  //   </Layout>
-  // );
   return (
     <Layout>
+      <Example1 />
       <Example2 />
     </Layout>
   );
