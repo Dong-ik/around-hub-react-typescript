@@ -8,6 +8,7 @@ interface TextSpanProps {
   readonly done: boolean;
 }
 
+// done 속성에 따라 스타일 변경(true면 취소선, false면 기본 스타일)
 const TextSpan = styled.span<TextSpanProps>`
   color: ${(props) => (props.done ? "#999999" : "inherit")};
   text-decoration: ${(props) => (props.done ? "line-through" : "inherit")};
@@ -28,6 +29,7 @@ interface TodoItemProps {
   };
 }
 
+// ToDoItem 컴포넌트: 개별 할 일 항목을 렌더링
 export const TodoItem = ({ todo }: TodoItemProps) => {
   const todoContext = useContext(TodoContext);
   const deleteTodo = todoContext?.actions.deleteTodo!;

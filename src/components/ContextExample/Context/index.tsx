@@ -25,7 +25,7 @@ interface Props {
 
 export const TodoProvider = (props: Props) => {
   const [TodoList, setTodoList] = useState<Array<TodoListItemType>>([
-    { no: 1, todo: "리액트 공부하기", done: false },
+    { no: 1, todo: "리액트 공부하기", done: true },
     { no: 2, todo: "타입스크립트 공부하기", done: true },
     { no: 3, todo: "컴포넌트 만들기", done: false },
     { no: 4, todo: "Context API 만들기", done: false },
