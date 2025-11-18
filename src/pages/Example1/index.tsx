@@ -38,11 +38,11 @@ export const Example1 = () => {
       <Title>Example 1 Page</Title>
       <Content>
         <Card>
-          <Image src="https://via.placeholder.com/250" alt="Example 1 Image" />
+          <Image src="https://placehold.co/250" alt="Example 1 Image" />
           <Text>This is an example of a card component.</Text>
         </Card>
         <Card>
-          <Image src="https://via.placeholder.com/250" alt="Example 1 Image" />
+          <Image src="https://placehold.co/250" alt="Example 1 Image" />
           <Text>This is an example of a card component.</Text>
         </Card>
       </Content>
