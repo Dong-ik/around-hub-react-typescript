@@ -10,6 +10,7 @@ import { Example1 } from "./pages/Example1";
 import { Example2 } from "./pages/Example2";
 import { BlogPosts } from "./pages/BlogPosts";
 import Photos from "./pages/Photo";
+import TodoList from "./pages/TodoList";
 import { Routes, Route } from "react-router-dom";
 import React from "react";
 import { Home } from "./pages/Home";
@@ -43,6 +44,7 @@ function App() {
         <Route path="/example2" element={<Example2 />} />
         <Route path="/blog-posts" element={<BlogPosts />} />
         <Route path="/photo" element={<Photos />} />
+        <Route path="/todo-list" element={<TodoList />} />
         <Route
           path={"*"}
           element={
