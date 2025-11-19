@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
+import { getPhotoList } from "./service";
 
 const Container = styled.div`
   display: flex;
@@ -27,7 +28,7 @@ const Photo = styled.img`
   border-radius: 4px;
 `;
 
-interface Photo {
+export interface Photo {
   readonly albumId: number;
   readonly id: number;
   readonly title: string;
@@ -58,7 +59,8 @@ const Photos = () => {
   //   }, []);
 
   useEffect(() => {
-    fetchPhotos().then((response) => setPhotos(response));
+    // fetchPhotos().then((response) => setPhotos(response));
+    void getPhotoList(setPhotos);
   }, []);
 
   return (
