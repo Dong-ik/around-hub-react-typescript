@@ -11,6 +11,7 @@ import { Example2 } from "./pages/Example2";
 import { BlogPosts } from "./pages/BlogPosts";
 import Photos from "./pages/Photo";
 import TodoList from "./pages/TodoList";
+import Counter from "./pages/Counter";
 import { Routes, Route } from "react-router-dom";
 import React from "react";
 import { Home } from "./pages/Home";
@@ -45,6 +46,7 @@ function App() {
         <Route path="/blog-posts" element={<BlogPosts />} />
         <Route path="/photo" element={<Photos />} />
         <Route path="/todo-list" element={<TodoList />} />
+        <Route path="/counter" element={<Counter />} />
         <Route
           path={"*"}
           element={

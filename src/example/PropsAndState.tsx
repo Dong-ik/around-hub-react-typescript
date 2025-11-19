@@ -3,7 +3,7 @@ import { Button } from "../components/Button";
 import { Label } from "../components/Label";
 
 export const PropsAndState = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
 
   const sub = () => {
     setCount(count - 1);

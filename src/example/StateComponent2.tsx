@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const StateComponent2 = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
 
   const sub = () => {
     setCount(count - 1);
